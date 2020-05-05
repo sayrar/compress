@@ -7,7 +7,6 @@ class PCA(object):
     def __init__(self,DATA, k):
         self.DATA = DATA
         self.k = k
-        print(1)
 
     def standardize(self):
 
