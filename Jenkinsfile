@@ -19,7 +19,7 @@ node {
         
     }
     stage('Deliver') { 
-            sh "docker run -v ${PWD}/src/Train:/usr/src/pca/Train pca:latest" 
+            sh "docker run -v ${PWD}src/Train:/usr/src/pca/Train pca:latest" 
             
         }
 
