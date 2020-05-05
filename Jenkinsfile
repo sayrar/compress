@@ -34,8 +34,7 @@ node {
             post {
                 success {
                     archiveArtifacts "${env.BUILD_ID}/sources/dist/pca" 
-                    sh "docker run --rm -v ${VOLUME} ${IMAGE} 'rm -rf build dist'"
-                }
+                    sh "docker run -v ${PWD}/src/Train:/usr/src/pca/Train pca:latest" 
             }
         }
 
