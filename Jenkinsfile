@@ -12,7 +12,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        sh "docker build -t pca:latest ."
+        app = docker.build "pca"
     }
 
     stage('Test image') {
