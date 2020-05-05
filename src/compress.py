@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 
 def load_data(input_dir):
     fnames = os.listdir(input_dir)
-    print(1)
     fnames.sort()
     images = np.array([plt.imread(os.path.join(input_dir, fname)) for fname in fnames])
     images = images.T
