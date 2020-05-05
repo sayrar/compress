@@ -7,7 +7,7 @@ class PCA(object):
     def __init__(self,DATA, k):
         self.DATA = DATA
         self.k = k
-
+        print(1)
     def standardize(self):
 
         x_bar = np.mean(self.DATA, axis =1).reshape(-1,1)
